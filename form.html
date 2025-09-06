@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="topyc">
+    <header class="site-header">
+        <div class="logo">Замовити</div>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li><a href="golovna.html" class="nav__link">Про нас</a></li>
+                <li><a href="table.html" class="nav__link">Меню кафе</a></li>
+                <li><a href="form.html" class="nav__link">Замовити</a></li>
+                <li><a href="gallery.html" class="nav__link">Естетика закладу</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="#" method="post" class="form" id="form">
+        <h1>Заповніть форму для замовлення</h1>
+        <label for="name">Ім'я</label>
+        <input type="text" id="name" name="user_name" required autocomplete="name">
+
+        <label for="surname">Прізвище</label>
+        <input type="text" id="surname" name="user_surname" required autocomplete="surname">
+
+        <label for="email">Електронна пошта</label>
+        <input type="email" id="email" name="user_email" required autocomplete="email">
+
+        <fieldset>
+            <legend>Стать</legend>
+            <label><input type="radio" name="gender" value="male">Чоловік</label>
+            <label><input type="radio" name="gender" value="female">Жінка</label>
+            <label><input type="radio" name="gender" value="other">Інше</label>
+        </fieldset>
+        <h5>вказуйте, щоб отримати цікавий подарунок!</h5>
+
+        <label for="town">Місто</label>
+        <select id="town" name="user_town">
+            <option value="" disabled selected>Оберіть своє місто. Доставка по всій Україні.</option>
+            <option value="kyiv">Київ</option>
+            <option value="lviv">Львів</option>
+            <option value="odesa">Одеса</option>
+            <option value="dnipro">Дніпро</option>
+            <option value="kharkiv">Харків</option>
+            <option value="vinnytsia">Вінниця</option>
+            <option value="ternopil">Тернопіль</option>
+            <option value="lutsk">Луцьк</option>
+            <option value="rivno">Рівне</option>
+            <option value="chernihiv">Чернігів</option>
+            <option value="chernivtsi">Чернівці</option>
+            <option value="khmelnytskyi">Хмельницький</option>
+            <option value="ivano-frankivsk">Івано-Франківськ</option>
+            <option value="uzhhorod">Ужгород</option>
+            <option value="zhytomyr">Житомир</option>
+            <option value="kropyvnytskyi">Кропивницький</option>
+            <option value="sumy">Суми</option>
+            <option value="poltava">Полтава</option>
+            <option value="mykolaiv">Миколаїв</option>
+            <option value="kherson">Херсон</option>
+            <option value="zaporizhzhia">Запоріжжя</option>
+        </select>
+
+        <label for="comment">Вкажіть, що саме хочете замовити(особисті вподобання/смаки):</label>
+        <textarea id="comment" name="user_comment" rows="4" cols="50"></textarea>
+
+        <input type="submit" value="Замовити!">
+
+    </form>
+    <footer class="footer">
+        <p>Наша перша кав'ярня Кульпарківська 59</p>
+        <p><a href="tel:+380689455572">+38 068 945 55 72</a></p>
+    </footer>
+</body>
+
+</html>

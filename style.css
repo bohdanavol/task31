@@ -1,0 +1,260 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url(depositphotos_60575951-stock-photo-coffee-shop-blur-background-with.jpg);
+  background-size: cover;
+  color: #222;
+  line-height: 1.6;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 12px;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgb(146, 114, 25);
+  color: white;
+  padding: 12px 16px;
+}
+
+nav.menu ul {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav.menu a {
+  color: rgb(165, 106, 42);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  display: inline-block;
+}
+
+nav.menu a:hover {
+  background: rgba(153, 139, 8, 0.968);
+  color: burlywood;
+}
+
+nav.menu a.active {
+  color: white;
+}
+
+.hero {
+  margin: 16px 0;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.slideshow {
+  max-width: var(--container);
+  margin: 16px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  background: #000;
+}
+
+.slideshow img {
+  width: 100%;
+  display: none;
+}
+
+.slideshow img.active {
+  display: block;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+  border-bottom: 3px solid rgb(255, 204, 19);
+}
+
+
+td.price {
+  text-align: right;
+  font-weight: bold;
+  font-style: italic;
+  border-bottom: 3px solid rgb(239, 230, 135);
+}
+
+
+.form {
+  background: #fae7a4;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 16px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+select:hover,
+textarea:hover {
+  border-color: #ffd700;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 2px solid #615302;
+  background: #e5f76d;
+  outline: none;
+}
+
+form:focus-within {
+  box-shadow: 0 0 10px rgb(146, 110, 26);
+  border-radius: 10px;
+}
+
+fieldset {
+  margin: 10px 0;
+  border: none;
+}
+
+fieldset label {
+  margin-right: 10px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background: rgba(128, 94, 0, 0.84);
+  color: #fff;
+  padding: 12px;
+  border: 0;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: rgba(108, 75, 2, 0.77);
+}
+
+.topyc {
+  text-align: center;
+}
+
+.rork {
+  margin: 0 auto;
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  padding: 24px 16px;
+  color: #777;
+}
+
+footer a {
+  color: inherit;
+}
+
+:root {
+  --header-bg: #926e19;
+  --header-text: #fff;
+  --hover-bg: #ffcf33;
+  --hover-text: #000;
+  --active-bg: #ffd500;
+  --active-text: #000;
+}
+
+.site-header {
+  background: var(--header-bg);
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  color: var(--header-text);
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--header-text);
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.nav__link:hover {
+  background: var(--hover-bg);
+  color: var(--hover-text);
+}
+
+.nav__link.active {
+  background: var(--active-bg);
+  color: var(--active-text);
+}
+
+audio {
+  background-color: #926e19;
+  border-radius: 8px;
+  padding: 4px;
+}
